@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="quora-api" />
-        <module name="quora-service" />
         <module name="quora-db" />
       </profile>
     </annotationProcessing>
@@ -16,7 +15,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="quora-api" options="-parameters" />
       <module name="quora-db" options="-parameters" />
-      <module name="quora-service" options="-parameters" />
+      <module name="quora-service" options="" />
     </option>
   </component>
 </project>

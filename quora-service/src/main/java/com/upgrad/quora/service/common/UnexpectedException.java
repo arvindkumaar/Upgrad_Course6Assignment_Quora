@@ -1,6 +1,5 @@
 package com.upgrad.quora.service.common;
 
-
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.text.MessageFormat;
@@ -21,7 +20,8 @@ public class UnexpectedException extends RuntimeException {
         this.parameters = parameters;
     }
 
-    public UnexpectedException(final ErrorCode errorCode, final Throwable cause, final Object... parameters) {
+    public UnexpectedException(
+            final ErrorCode errorCode, final Throwable cause, final Object... parameters) {
         super();
         this.errorCode = errorCode;
         this.cause = cause;
@@ -51,5 +51,4 @@ public class UnexpectedException extends RuntimeException {
     public final void printStackTrace(final PrintWriter writer) {
         super.printStackTrace(writer);
     }
-
 }
